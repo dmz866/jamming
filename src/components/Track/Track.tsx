@@ -6,10 +6,10 @@ type TProps = {
 
 export const Track = ({ track: { name, album, artist, id } }: TProps) => {
 	return (
-		<>
-			<label>{name}</label>
-			<label>{album}</label>
-			<label>{artist}</label>
-		</>
+		<div className="flex">
+			<p>{name}</p>
+			<p>{album}</p>
+			<p>{artist}</p>
+		</div>
 	);
 };

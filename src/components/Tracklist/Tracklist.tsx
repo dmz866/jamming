@@ -7,8 +7,8 @@ type TProps = {
 
 export const Tracklist = ({ tracks }: TProps) => {
 	return (
-		<>
+		<div className="flex">
 			{tracks?.map((track) => <Track key={track.id} track={track} />)}
-		</>
+		</div>
 	);
 };
